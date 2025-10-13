@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Cart — CELINE</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Paystack inline library -->
+    <script src="https://js.paystack.co/v1/inline.js"></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand small" href="index.html">CELINE</a>
+      <nav class="nav">
+        <a href="shop.html">Shop</a>
+        <a href="orders.html">My Orders</a>
+        <button id="logoutBtn" class="btn btn-small btn-outline">Logout</button>
+      </nav>
+    </header>
+
+    <main class="container">
+      <h2>Your Cart</h2>
+      <div id="cartItems" class="list"></div>
+
+      <div class="cart-actions">
+        <!-- Paystack Button -->
+        <button id="placeOrderBtn" class="btn">Pay with Paystack</button>
+
+        <!-- OPay Button -->
+        <button id="opayBtn" class="btn btn-outline">Pay with OPay</button>
+
+        <a class="btn btn-outline" href="shop.html">Continue Shopping</a>
+      </div>
+
+      <p class="muted">Payments processed securely by Paystack & OPay.</p>
+    </main>
+
+    <script type="module" src="cart.js"></script>
+  </body>
+</html>

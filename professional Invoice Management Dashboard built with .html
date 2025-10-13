@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Invoice Management Dashboard</title>
+    <link
+      rel="stylesheet"
+      href="professional Invoice Management Dashboard built with .CSS"
+    />
+  </head>
+  <body>
+    <div class="dashboard">
+      <!-- Sidebar Filters -->
+      <aside class="sidebar">
+        <h2>Filters</h2>
+        <div class="filter-group">
+          <h3>Status</h3>
+          <ul>
+            <li>
+              <input type="checkbox" id="paid" /> <label for="paid">Paid</label>
+            </li>
+            <li>
+              <input type="checkbox" id="pending" />
+              <label for="pending">Pending</label>
+            </li>
+            <li>
+              <input type="checkbox" id="overdue" />
+              <label for="overdue">Overdue</label>
+            </li>
+          </ul>
+        </div>
+        <div class="filter-group">
+          <h3>Date</h3>
+          <input type="date" />
+        </div>
+        <div class="filter-group">
+          <h3>Client</h3>
+          <input type="text" placeholder="Search client..." />
+        </div>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="main-content">
+        <header>
+          <h1>Invoices</h1>
+        </header>
+
+        <div class="content-wrapper">
+          <!-- Invoice List -->
+          <section class="invoice-list">
+            <div class="invoice-card">
+              <div>
+                <h3>Invoice #001</h3>
+                <p>Client: Lebron</p>
+              </div>
+              <span class="tag paid">Paid</span>
+            </div>
+
+            <div class="invoice-card">
+              <div>
+                <h3>Invoice #002</h3>
+                <p>Client: clark</p>
+              </div>
+              <span class="tag pending">Pending</span>
+            </div>
+
+            <div class="invoice-card">
+              <div>
+                <h3>Invoice #003</h3>
+                <p>Client: Louis</p>
+              </div>
+              <span class="tag overdue">Overdue</span>
+            </div>
+          </section>
+
+          <!-- Invoice Preview -->
+          <section class="invoice-preview">
+            <h2>Invoice Details</h2>
+            <p><strong>Invoice #001</strong></p>
+            <p>Client: Lebron James</p>
+            <p>Amount: $1,200</p>
+            <p>Status: <span class="tag paid">Paid</span></p>
+            <p>Due Date: 15th Sept, 2025</p>
+            <button class="btn">Download PDF</button>
+          </section>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

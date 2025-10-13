@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order Management Dashboard</title>
+    <link rel="stylesheet" href="order management.css" />
+  </head>
+  <body>
+    <div class="dashboard">
+      <!-- Sidebar: Customer Info -->
+      <aside class="sidebar">
+        <h2>Customer Info</h2>
+        <div class="customer-card">
+          <h3>ore victoria</h3>
+          <p>Email: john@example.com</p>
+          <p>Phone: +234 800 123 4567</p>
+          <p>Address: 21 Lekki Phase 1, Lagos</p>
+        </div>
+        <div class="customer-card">
+          <h3>lebron</h3>
+          <p>Email: jane@example.com</p>
+          <p>Phone: +234 700 987 6543</p>
+          <p>Address: 45 Ikeja GRA, Lagos</p>
+        </div>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="main-content">
+        <header>
+          <h1>Order Management</h1>
+        </header>
+
+        <!-- Orders Table -->
+        <section class="orders">
+          <table>
+            <thead>
+              <tr>
+                <th>Order ID</th>
+                <th>Product</th>
+                <th>Customer</th>
+                <th>Amount</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>#1001</td>
+                <td>Wireless Headphones</td>
+                <td>John Doe</td>
+                <td>$120</td>
+                <td><span class="status shipped">Shipped</span></td>
+              </tr>
+              <tr>
+                <td>#1002</td>
+                <td>Smart Watch</td>
+                <td>ore victoria</td>
+                <td>$250</td>
+                <td><span class="status pending">Pending</span></td>
+              </tr>
+              <tr>
+                <td>#1003</td>
+                <td>Gaming Mouse</td>
+                <td>lebron</td>
+                <td>$80</td>
+                <td><span class="status cancelled">Cancelled</span></td>
+              </tr>
+              <tr>
+                <td>#1004</td>
+                <td>Office Chair</td>
+                <td>vic_da_shadow</td>
+                <td>$300</td>
+                <td><span class="status shipped">Shipped</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

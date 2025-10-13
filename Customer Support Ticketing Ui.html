@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Customer Support Ticketing UI</title>
+<link rel="stylesheet" href="Customer-support-ui.css" />
+</head>
+<body>
+<header class="header">
+<div>
+    <div class="container"></div>
+<h1>Support Desk</h1>
+<p class="muted">Manage tickets, priorities, and conversations</p>
+</div>
+<div class="header-actions">
+<button class="btn">Refresh</button>
+<button class="btn primary">+ New Ticket</button>
+</div>
+</header>
+
+
+<main class="app">
+<!-- Ticket List -->
+<section class="panel list-panel">
+<div class="list-header">
+<div class="search">
+<input placeholder="🔍 Search tickets..." />
+</div>
+</div>
+
+
+<div class="filters">
+<select class="btn">
+<option>All statuses</option>
+<option>Open</option>
+<option>Pending</option>
+<option>Resolved</option>
+<option>Closed</option>
+</select>
+<select class="btn">
+<option>All priorities</option>
+<option>Low</option>
+<option>Medium</option>
+<option>High</option>
+<option>Urgent</option>
+</select>
+</div>
+
+
+<div class="stats">
+<div class="stat"><span>Total</span><strong>3</strong></div>
+<div class="stat"><span>Open</span><strong>1</strong></div>
+<div class="stat"><span>Urgent</span><strong>1</strong></div>
+</div>
+
+
+<div class="ticket-list">
+<div class="ticket">
+<div class="ticket-main">
+<h4>Login issue</h4>
+<p>Customer cannot log into account</p>
+</html>

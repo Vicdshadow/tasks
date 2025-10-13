@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Patient Portal</title>
+    <link rel="stylesheet" href="hospital.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header class="navbar">
+      <div class="logo">VIC_Care Portal</div>
+      <ul class="nav-links">
+        <li><a href="#appointments">Appointments</a></li>
+        <li><a href="#prescriptions">Prescriptions</a></li>
+        <li><a href="#history">Medical History</a></li>
+      </ul>
+      <a href="#logout" class="btn">Logout</a>
+    </header>
+
+    <!-- Welcome Section -->
+    <section class="welcome">
+      <h1>Welcome, Lebron</h1>
+      <p>
+        Manage your appointments, prescriptions, and medical history in one
+        place.
+      </p>
+    </section>
+
+    <!-- Appointment List -->
+    <section id="appointments" class="appointments">
+      <h2>Upcoming Appointments</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Time</th>
+            <th>Doctor</th>
+            <th>Department</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Oct 5, 2025</td>
+            <td>10:30 AM</td>
+            <td>Dr. Smith</td>
+            <td>Cardiology</td>
+            <td><span class="status confirmed">Confirmed</span></td>
+          </tr>
+          <tr>
+            <td>Oct 15, 2025</td>
+            <td>2:00 PM</td>
+            <td>Dr. Lee</td>
+            <td>Dermatology</td>
+            <td><span class="status pending">Pending</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Prescriptions -->
+    <section id="prescriptions" class="prescriptions">
+      <h2>Your Prescriptions</h2>
+      <div class="card-container">
+        <div class="card">
+          <h3>Atorvastatin</h3>
+          <p><strong>Dosage:</strong> 10mg daily</p>
+          <p><strong>Prescribed by:</strong> Dr. Adams</p>
+          <p><strong>Refills:</strong> 2 remaining</p>
+        </div>
+        <div class="card">
+          <h3>Amoxicillin</h3>
+          <p><strong>Dosage:</strong> 500mg, 3 times daily</p>
+          <p><strong>Prescribed by:</strong> Dr. Lee</p>
+          <p><strong>Refills:</strong> None</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Medical History -->
+    <section id="history" class="history">
+      <h2>Medical History</h2>
+      <ul class="timeline">
+        <li>
+          <span class="date">Sep 12, 2025</span>
+          <div class="content">
+            <h3>Annual Check-up</h3>
+            <p>Routine examination, blood work normal.</p>
+          </div>
+        </li>
+        <li>
+          <span class="date">Aug 3, 2025</span>
+          <div class="content">
+            <h3>Dermatology Visit</h3>
+            <p>Treatment for skin rash, prescribed topical cream.</p>
+          </div>
+        </li>
+        <li>
+          <span class="date">Jun 20, 2025</span>
+          <div class="content">
+            <h3>Cardiology Consultation</h3>
+            <p>High cholesterol diagnosed, prescribed Atorvastatin.</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>© 2025 MediCare Portal. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>
